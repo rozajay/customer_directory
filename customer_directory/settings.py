@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'view_customers',
-    'graphene_django'
+    'graphene_django',
+    'psycopg2'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,10 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'rootpw',
         'HOST': 'db', 
-        'PORT': '5432'
+        'PORT': '5432',
+        'TEST': {
+            'ENGINE': 'django.db.backends.sqlite3',
+        }
     }
 }
 
