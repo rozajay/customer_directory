@@ -1,12 +1,18 @@
 import graphene
 from graphene_django import DjangoObjectType
 
-from view_customers.models import Person
+from view_customers.models import Person, Address
+
+class AddressType(DjangoObjectType):
+    class Meta:
+        model = Address
+        fields = ("id", "number", "street", "city", "state")
 
 class PersonType(DjangoObjectType):
     class Meta:
         model = Person
         fields = ("id", "name", "email")
+    address = graphene.Field(AddressType)
 
 class Query(graphene.ObjectType):
     people = graphene.List(PersonType)

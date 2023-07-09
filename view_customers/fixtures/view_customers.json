@@ -1,12 +1,21 @@
-
 [
     {
-      "model": "view_customers.person",
-      "pk": 1,
-      "fields": {
-        "name": "John Doe",
-        "email": "johndoe@example.com"
-      }
+        "model": "view_customers.address",
+        "pk": 1,
+        "fields": {
+            "number": "123",
+            "street": "Main Street",
+            "city": "Cityville",
+            "state": "California"
+        }
+    },
+    {
+        "model": "view_customers.person",
+        "pk": 1,
+        "fields": {
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "address": 1
+        }
     }
-  ]
-  
+]
