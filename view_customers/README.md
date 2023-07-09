@@ -70,6 +70,8 @@ Here's an overview of the project structure:
 
 The project has potential for further extensions and enhancements to make it production-ready and provide additional features. Some possible extensions include:
 
+- **Test Coverage**: Although only one test was written and running it locally was not possible due to time constraints, it is crucial to emphasize the importance of test coverage. 
+
 - **Production-ready deployment**: Implement a production-ready deployment setup, such as using a web server like Nginx, configuring environment variables, and setting up a secure HTTPS connection with SSL/TLS certificates.
   
 - **Pagination and total page count**: Extend the API endpoint to provide the total number of pages available. This enhancement would allow the Front-end Engineering team to implement a more user-friendly browsing experience, showing the total number of pages and enabling users to navigate through the data more efficiently.
