@@ -4,7 +4,20 @@ services:
     build: .
     environment:
       PYTHONDONTWRITEBYTECODE: 1
+      DATABASE_NAME: maindb
+      DATABASE_USER: root
+      DATABASE_PASSWORD: rootpw
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
     ports:
       - "8000:8000"
     volumes:
       - .:/usr/src/app
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: rootpw
+      POSTGRES_DB: maindb

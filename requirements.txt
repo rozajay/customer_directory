@@ -1,1 +1,2 @@
 graphene_django
+psycopg2
