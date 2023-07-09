@@ -1,0 +1,12 @@
+
+[
+    {
+      "model": "view_customers.person",
+      "pk": 1,
+      "fields": {
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+      }
+    }
+  ]
+  

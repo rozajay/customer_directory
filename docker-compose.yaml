@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  django:
+    build: .
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app
